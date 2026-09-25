@@ -1,2 +1,11 @@
 .direnv/
 .DS_Store
+
+# Build outputs, including draw.io libraries with AWS-owned SVG assets
+/build/
+
+# Downloaded AWS icon package archives
+*.zip
+
+# Local draw.io import test artifact
+/workspace/test.drawio

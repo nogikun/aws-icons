@@ -12,7 +12,7 @@
         pkgs = import nixpkgs { inherit system; };
       in
       {
-        devShells.default = pkgs.mkShell {
+        devShells.default = pkgs.mkShellNoCC {
           # 全OS共通で必要なツール
           buildInputs = [
             pkgs.mise      # ランタイム管理（Node / Python 等）
@@ -20,10 +20,9 @@
             pkgs.go-task   # タスクランナー（Taskfile.yml）
           ];
 
+          # Nix の shellHook は Bash で評価される。
           shellHook = ''
-            # miseの有効化（現在のシェルに合わせて自動検出）
-            # .envrc の `use flake` 経由で自動的に呼び出される
-            eval "$(mise activate zsh 2>/dev/null || mise activate bash)"
+            eval "$(mise activate bash)"
           '';
         };
       });

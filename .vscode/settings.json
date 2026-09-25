@@ -1,0 +1,24 @@
+{
+  "hediet.vscode-drawio.customLibraries": [
+    {
+      "entryId": "aws-architecture-services",
+      "libName": "AWS Architecture Services",
+      "file": "${workspaceFolder}/build/drawio_libs/current/AWS-Architecture-Services.xml"
+    },
+    {
+      "entryId": "aws-resource-icons",
+      "libName": "AWS Resource Icons",
+      "file": "${workspaceFolder}/build/drawio_libs/current/AWS-Resource-Icons.xml"
+    },
+    {
+      "entryId": "aws-category-icons",
+      "libName": "AWS Category Icons",
+      "file": "${workspaceFolder}/build/drawio_libs/current/AWS-Category-Icons.xml"
+    },
+    {
+      "entryId": "aws-architecture-groups",
+      "libName": "AWS Architecture Groups",
+      "file": "${workspaceFolder}/build/drawio_libs/current/AWS-Architecture-Groups.xml"
+    }
+  ]
+}
